@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-labelledby="title desc">
+  <title id="title">CallMeAI</title>
+  <desc id="desc">CallMeAI nested hexagon logo</desc>
+  <g fill="none" stroke="#82E636" stroke-linejoin="round">
+    <path d="m16 4 11 6.25v11.5L16 28 5 21.75v-11.5L16 4Z" stroke-width="2.35"/>
+    <path d="m16 9 6.5 3.75v6.5L16 23l-6.5-3.75v-6.5L16 9Z" stroke-width="2.15"/>
+    <path d="M16 4v5M27 10.25l-4.5 2.5M27 21.75l-4.5-2.5M16 28v-5M5 21.75l4.5-2.5M5 10.25l4.5 2.5" stroke-width="2.15" stroke-linecap="butt"/>
+  </g>
+</svg>

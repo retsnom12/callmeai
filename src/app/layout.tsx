@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "CallMeAI | The 24/7 AI Receptionist",
   description:
     "CallMeAI gives high-growth businesses a reliable 24/7 AI receptionist for customer calls, lead qualification, and appointment booking.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

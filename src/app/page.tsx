@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { HeroSection } from '@/components/ai-voice-agent/HeroSection';
 import { AudioDemoCard } from '@/components/ai-voice-agent/AudioDemoCard';
 import { FeaturesGrid } from '@/components/ai-voice-agent/FeaturesGrid';
@@ -111,7 +112,7 @@ export default function AIVoiceAgentPage() {
             CALLMEAI
           </SmoothScrollLink>
           <div className="hidden items-center gap-7 text-sm text-slate-400 md:flex">
-            <SmoothScrollLink className="transition hover:text-white" href="#value-prop">Overview</SmoothScrollLink>
+            <SmoothScrollLink className="transition hover:text-white" href="#overview">Overview</SmoothScrollLink>
             <SmoothScrollLink className="transition hover:text-white" href="#features">Features</SmoothScrollLink>
             <SmoothScrollLink className="transition hover:text-white" href="#process">Process</SmoothScrollLink>
             <SmoothScrollLink className="transition hover:text-white" href="#pricing">Pricing</SmoothScrollLink>
@@ -142,99 +143,114 @@ export default function AIVoiceAgentPage() {
           <div className="mx-auto max-w-6xl">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                   Product
-                </p>
+                </h2>
                 <ul className="mt-4 space-y-2">
                   <li>
-                    <a
-                      href="#features"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
+                    <SmoothScrollLink href="#features" className="text-sm text-slate-300 transition hover:text-[#82E636]">
                       Features
-                    </a>
+                    </SmoothScrollLink>
                   </li>
                   <li>
-                    <a
-                      href="#pricing"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
+                    <SmoothScrollLink href="#overview" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      Overview
+                    </SmoothScrollLink>
+                  </li>
+                  <li>
+                    <SmoothScrollLink href="#process" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      How It Works
+                    </SmoothScrollLink>
+                  </li>
+                  <li>
+                    <SmoothScrollLink href="#pricing" className="text-sm text-slate-300 transition hover:text-[#82E636]">
                       Pricing
-                    </a>
+                    </SmoothScrollLink>
+                  </li>
+                  <li>
+                    <SmoothScrollLink href="#overview" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      Integrations
+                    </SmoothScrollLink>
                   </li>
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                   Company
-                </p>
+                </h2>
                 <ul className="mt-4 space-y-2">
                   <li>
-                    <a
-                      href="#top"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
-                      About
-                    </a>
+                    <SmoothScrollLink href="#top" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      About CallMeAI
+                    </SmoothScrollLink>
                   </li>
                   <li>
-                    <a
-                      href="#process"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
-                      How it works
-                    </a>
+                    <SmoothScrollLink href="#features" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      Why Choose Us
+                    </SmoothScrollLink>
                   </li>
                   <li>
-                    <a href="#features" className="text-sm text-slate-300 transition hover:text-white">
+                    <Link href="/faq" className="text-sm text-slate-300 transition hover:text-[#82E636]">
                       FAQ
-                    </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <SmoothScrollLink href="#contact" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      Book a Demo
+                    </SmoothScrollLink>
                   </li>
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                   Legal
-                </p>
+                </h2>
                 <ul className="mt-4 space-y-2">
                   <li>
-                    <a
-                      href="#contact"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
+                    <Link href="/privacy" className="text-sm text-slate-300 transition hover:text-[#82E636]">
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#contact"
-                      className="text-sm text-slate-300 transition hover:text-white"
-                    >
+                    <Link href="/terms" className="text-sm text-slate-300 transition hover:text-[#82E636]">
                       Terms of Service
-                    </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/privacy" className="text-sm text-slate-300 transition hover:text-[#82E636]">
+                      Data Security &amp; Privacy
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
+                <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                   Contact
-                </p>
-                <ul className="mt-4 space-y-2">
+                </h2>
+                <ul className="mt-4 space-y-3">
                   <li>
                     <a
                       href="mailto:contact.callmeai@gmail.com"
-                      className="text-sm text-slate-300 transition hover:text-white"
+                      className="text-sm text-slate-300 transition hover:text-[#82E636]"
                     >
                       contact.callmeai@gmail.com
                     </a>
                   </li>
                   <li>
-                    <a
+                    <SmoothScrollLink
                       href="#contact"
-                      className="text-sm text-slate-300 transition hover:text-white"
+                      className="inline-flex text-sm font-semibold text-slate-200 transition hover:text-[#82E636]"
                     >
-                      Contact us
-                    </a>
+                      Talk to Sales
+                    </SmoothScrollLink>
+                  </li>
+                  <li>
+                    <SmoothScrollLink
+                      href="#contact"
+                      className="inline-flex rounded-full border border-[#82E636]/40 bg-[#82E636]/10 px-3 py-1.5 text-xs font-semibold text-[#82E636] transition hover:border-[#82E636] hover:bg-[#82E636]/20"
+                    >
+                      Request Free 3-Min Demo Agent
+                    </SmoothScrollLink>
                   </li>
                   <li>
                     <span className="text-xs text-slate-500">Response within 24 hours</span>

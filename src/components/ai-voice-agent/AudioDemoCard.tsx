@@ -32,7 +32,7 @@ export function AudioDemoCard() {
   };
 
   return (
-    <section id="value-prop" className="relative scroll-mt-16 overflow-hidden bg-[#0b111d] px-4 py-20 sm:px-8 sm:py-28">
+    <section id="overview" className="relative scroll-mt-16 overflow-hidden bg-[#0b111d] px-4 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-[minmax(0,1fr)_22rem] md:gap-16">
         <div className="max-w-3xl text-center md:text-left">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.3em] text-[#82E636]">
